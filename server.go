@@ -14,6 +14,7 @@ func start(args []string) int {
 	srv := &server{
 		router: mux.NewRouter(),
 	}
+	srv.routes()
 	if err := srv.run(); err != nil {
 		return 1
 	}
