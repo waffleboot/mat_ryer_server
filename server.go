@@ -16,7 +16,7 @@ type server struct {
 type EmailSender struct {
 }
 
-func start(args []string) int {
+func start(args ...string) int {
 	srv := &server{
 		router: mux.NewRouter(),
 	}
