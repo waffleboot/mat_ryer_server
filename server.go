@@ -1,12 +1,14 @@
 package main
 
 import (
+	"database/sql"
 	"net/http"
 
 	"github.com/gorilla/mux"
 )
 
 type server struct {
+	db     *sql.DB
 	router *mux.Router
 }
 
