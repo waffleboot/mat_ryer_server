@@ -10,6 +10,10 @@ import (
 type server struct {
 	db     *sql.DB
 	router *mux.Router
+	email  EmailSender
+}
+
+type EmailSender struct {
 }
 
 func start(args []string) int {
